@@ -18,7 +18,7 @@ function Conv {
 function Staps {
         for I in ${1/=/ }
         do
-                echo ${A} |grep -aob "${I}"
+                echo ${A} |grep -aob "${I,,}"
         done
 }
 
